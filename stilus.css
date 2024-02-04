@@ -324,3 +324,54 @@ h2{
   margin: 10px;
   border-bottom:1px solid #333;
 }
+
+/*rolunk oldal elrendezese*/
+
+.rolunk{
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin: 4%;
+  padding: 30 px;
+}
+
+.rolunk div{
+  border: #111 2px solid;
+  border-radius: 20px;
+}
+
+.rolunk img{
+  margin: 20px;
+  border-radius: 50%;
+  border: 3px solid #333;
+}
+
+.rolunk h3{
+  margin: 10px 50px ;
+  border-bottom: 1px solid #333;
+}
+
+/*visszajelzés form*/
+
+.visszajelzes_tartalom{
+  padding: 10px;
+  margin: auto;
+}
+
+.visszajelzes_tartalom form{
+  padding: 20px;
+}
+
+.visszajelzes_tartalom textarea {
+  margin: 10px auto;
+  padding: 15px;
+  border: #333 1px solid;
+  border-radius: 20px;
+  width: 97%;
+  resize: none;
+}
+
+.visszajelzes_tartalom textarea:hover{
+  border-color: #4d2434;
+}
