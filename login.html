@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bejelentkezés</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <header>
+        <p class="balra"><a href="about.html">Rólunk</a></p>
+        <img src="kepek/tw.png" alt="twitter" class="socials">
+        <img src="kepek/fb.png" alt="facebook" class="socials">
+        <img src="kepek/yt.png" alt="youtube" class="socials"><br>
+        <h1>Bejelentkezés</h1>
+        <form class="felso_kereses">
+            <input type="text" placeholder="Keresés az oldalon.." name="search">
+            <button type="submit">Keresés</button>
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőoldal</a></li>
+            <li><a href="programmes.html">Programok</a></li>
+            <li><a href="signform.html">Jelentkezés</a></li>
+            <li><a href="payment.html">Támogatás</a></li>
+            <li class="right"><a href="login.html">Bejelentkezés</a></li>
+        </ul>
+    </nav>
+    <article class="bejelentkezes">
+        <div class="bejelentkezes_tartalom">
+            <form action="action_page.php" method="post">
+                <div class="bejelentkezes">
+                <label for="fnev"><b>Felhasználónév</b></label>
+                <input type="text" placeholder="felhasználónév" name="fnev" required><br>
+                <label for="jszo"><b>Jelszó</b></label>
+                <input type="password" placeholder="Jelszó" name="jszo" required><br>
+                <button type="submit"><a href="index.html">Bejelentkezés</a></button><br>
+                <label><input type="checkbox" checked="checked" name="Emlékezz rám!"> Emlékezz rám!</label>
+                <p id="bj">Elfelejtett <a href="#">jelszó?</a></p>
+                </div> 
+            </form>
+            <div class="avatarok">
+            <img src="kepek/avatar.jpg" alt="avatar" class="attetszo">
+            <img src="kepek/avatar3.jpg" alt="avatar" class="attetszo">
+            </div>
+        </div>
+        <div>
+
+        </div>
+    </article>
+    <footer>
+        <p>Készítette: Both Orsolya, Bajári Gergő</p>
+    </footer>
+</body>
+</html>

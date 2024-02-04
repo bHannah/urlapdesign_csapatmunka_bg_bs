@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jelentkezés</title>
+    <link rel="stylesheet" href="stilus.css">
+</head>
+<body>
+    <header>
+        <p class="balra"><a href="about.html">Rólunk</a></p>
+        <img src="kepek/tw.png" alt="twitter" class="socials">
+        <img src="kepek/fb.png" alt="facebook" class="socials">
+        <img src="kepek/yt.png" alt="youtube" class="socials"><br>
+        <h1>Jelentkezés</h1>
+        <form class="felso_kereses">
+            <input type="text" placeholder="Keresés az oldalon.." name="search">
+            <button type="submit">Keresés</button>
+        </form>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Kezdőoldal</a></li>
+            <li><a href="programmes.html">Programok</a></li>
+            <li><a href="signform.html">Jelentkezés</a></li>
+            <li><a href="payment.html">Támogatás</a></li>
+            <li class="right"><a href="login.html">Bejelentkezés</a></li>
+        </ul>
+    </nav>
+    <article>
+        <div class="jelentkezes_tartalom">
+            <div>
+                <form>
+                <div>
+                <h1>Jelentkezz az előadásokra!</h1>
+                <p>Ha kitöltöd az űrlapot leadod a jelentkezésedet az általad választott előadásokra. Vigyázz, csak akkor vagy jogosult egy előadáson részt venni ha előzetesen itt jelezted! Az előadások nem egy időpontban kerülnek megtartásra, egyéb információkért kérlek olvasd el az erről szóló cikket a programok fülben</p>
+                <hr>
+                <label for="nev"><b>Név:</b></label>
+                <input type="text" placeholder="pl: Példa Anna" name="nev" required>
+                <label for="szuletes"><b>Születési hely, idő:</b></label>
+                <input type="text" placeholder="pl: Debrecen" name="szuletes" required>
+                 <input type="date"  name="szuletes"><br><br>
+                <label for="Szig-szam"><b>Személyi igazolvány száma:</b></label>
+                <input type="text" placeholder="pl: 123456AA" name="Szig-szam" required>
+                <p><b>Melyik előadásokat szeretnéd megtekinteni?:</b></p>
+                <input type="checkbox" id="eloadas1" name="eloadas1" value="szociologia">
+                <label for="vehicle1"> Szociológiai kar - előadás</label><br>
+                <input type="checkbox" id="eloadas2" name="eloadas2" value="Car">
+                <label for="vehicle2"> Jogtudományi kar - előadás</label><br>
+                <input type="checkbox" id="eloadas3" name="eloadas3" value="Boat">
+                <label for="vehicle3"> Természettudományi kar - előadás</label><br>
+                <input type="checkbox" id="eloadas4" name="eloadas4" value="Boat">
+                <label for="vehicle3"> Anglisztika - előadás</label><br>
+                <input type="checkbox" id="eloadas5" name="eloadas5" value="Boat">
+                <label for="vehicle3"> Mérnökinformatika - előadás</label><br>
+                <input type="checkbox" id="eloadas6" name="eloadas6" value="Boat">
+                <label for="vehicle3"> Fizika tanszék - előadás</label><br><br>
+                <div class="clearfix">
+                    <button type="button" class="megsem">Mégsem</button>
+                    <button type="submit" class="bekuldes">Beküldés</button>
+                </div>
+                </div>
+                </form>
+            </div>
+            <div class="jelentkezes_gif">
+                <img src="kepek/gif2.gif" alt="gif">
+            </div>
+        </div>
+    </article>
+    <footer>
+        <p>Készítette: Both Orsolya, Bajári Gergő</p>
+    </footer>
+</body>
+</html>

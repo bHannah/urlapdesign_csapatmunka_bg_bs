@@ -1,0 +1,326 @@
+/*teljes weboldal*/
+
+body{
+    background-image: url(kepek/hatter1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position:unset;
+    background-color: #ffffff;
+    margin: auto;
+    padding: auto;
+    width: 100%;
+    max-width: 1000px;
+    background-color: rgba(238, 238, 238, 0.685);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*Cím stílusa*/
+
+header {
+    padding: 60px;
+    text-align: center;
+    background: #4d2434;
+    color: white;
+    font-size: 30px;
+  }
+
+/*szociális média kisikonok*/
+
+header p{
+  float: left;
+}
+
+header a{
+  padding: 6px 20px;
+  background-color: #a9a8a9;
+  border: 2px solid #a9a8a9;
+  border-radius: 40px;
+  list-style-type: none;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.socials{
+  max-width: 50px;
+  max-height: 50px;
+}
+
+header img{
+  padding: 5px;
+  margin: 0;
+  float: right;
+}
+
+/*header keresés*/
+
+.felso_kereses{
+    border: none;
+    color: #ffffff;
+}
+
+/*Navigáció*/
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+nav li {
+    float: left;
+  }
+  
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+nav li a:hover {
+    background-color: #111;
+  }
+
+nav li.right {
+    float: right;
+  }
+
+/*Kezdőlap tartalmának elrendezése*/
+
+.kezdolap_tartalom {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+}
+
+img{
+    height: 300px;
+    width: 300px;
+}
+
+article div{
+    border: 1 px solid black; 
+    border-radius: 20px;
+}
+
+h5{
+    font-size: 18px;
+}
+
+p{
+    font-size: 16px;
+}
+
+article{
+    padding: 2px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .kezdolap_tartalom {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+  }
+
+.tartalom {
+    box-sizing: border-box;
+    border: 3px solid #4d2434;
+    background: #ffffff;
+    padding: 3px;
+  }
+
+/*jelentkezés gombok*/
+
+.tartalom ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    border: 1 px solid #333;
+    border-radius: 20px;
+    width: 60%;
+  }
+  
+.tartalom li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+li a:hover {
+    background-color: #111;
+  }
+
+/*Footer*/
+
+footer{
+    text-align: center;
+    background-color: #4d2434;
+    color: #ffffff;
+    padding: 5px;
+}
+
+/*Bejelentkezés from css-e*/
+
+form {
+    border: 2px solid #000000;
+    border-radius: 20px;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #000000;
+  border-radius: 20px;
+  box-sizing: border-box;
+}
+
+button {
+  border-radius: 20px;
+  background-color: #333;
+  color: white;
+  padding: 15px 20px;
+  margin: 5px 0px;
+  border: none;
+  cursor: pointer;
+  width: 40%;
+}
+
+button:hover {
+  background-color: #111;
+}
+
+.container {
+  padding: 16px;
+}
+
+#bj{
+    margin-left: 3px;
+}
+
+.bejelentkezes{
+    padding: 20px;
+}
+  
+button a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+  }
+
+/*Bejelentkezés tartalmának elrendezése*/
+
+.bejelentkezes_tartalom {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.avatarok{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.avatarok img{
+    max-width: 250px;
+    max-height: 250px;
+    padding-top: 20px;
+}
+
+/*jelentkezési Űrlap elrendezése*/
+
+.jelentkezes_tartalom{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.jelentkezes_tartalom form{
+    padding: 10px;
+}
+
+.jelentkezes_gif{
+    padding-top: 200px;
+}
+
+
+/*programok weboldal elrendezese*/
+
+.programok{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    margin: 5px;
+    padding: 5px;
+}
+
+.jobbra img{
+    float: right;
+    margin: 10px;
+    border: 2px solid #4d2434;
+}
+
+.balra img{
+    float: left;
+    margin: 10px;
+    border: 2px solid #4d2434;
+}
+
+.jobbra h2, .balra h2{
+  border-bottom: 1px solid grey;
+  border-radius: 0%;
+}
+
+/*megetkintés gombok a programok weboldalon*/
+
+.programok ul {
+  list-style-type: none;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  border: 1 px solid #333;
+  border-radius: 20px;
+  width: 30%;
+}
+
+.programok li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/*tamogatas elrendezese*/
+
+.tamogatas{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+  margin: 40px 20px;
+}
+
+
+.tart{
+  margin: 10px;
+}
+
+h2{
+  margin: 10px;
+  border-bottom:1px solid #333;
+}
