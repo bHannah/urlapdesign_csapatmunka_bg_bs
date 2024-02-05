@@ -96,17 +96,24 @@ nav li.right {
 .kezdolap_tartalom {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 30px;
+}
+
+.tartalom{
+  margin: 0px 20px 50px 20px;
 }
 
 img{
-    height: 300px;
-    width: 300px;
+    width: 100%;
+    height: auto;
 }
 
 article div{
     border: 1 px solid black; 
     border-radius: 20px;
+}
+
+.kezdolap_tartalom div:hover{
+  transform: scale(1.1);
 }
 
 h5{
@@ -226,6 +233,10 @@ button a {
 
 /*Bejelentkezés tartalmának elrendezése*/
 
+.bejelentkezes_header{
+  margin: 30px 0px;
+}
+
 .bejelentkezes_tartalom {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -270,12 +281,16 @@ button a {
 }
 
 .jobbra img{
+    width: 300px;
+    height: 300px;
     float: right;
     margin: 10px;
     border: 2px solid #4d2434;
 }
 
 .balra img{
+    width: 300px;
+    height: 300px;
     float: left;
     margin: 10px;
     border: 2px solid #4d2434;
@@ -326,6 +341,10 @@ h2{
 }
 
 /*rolunk oldal elrendezese*/
+
+.profilkep{
+  width: 380px;
+}
 
 .galeria{
   display: grid;

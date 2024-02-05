@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bejelentkezés</title>
+    <title>Profilom</title>
     <link rel="stylesheet" href="stilus.css">
 </head>
 <body>
@@ -12,7 +12,7 @@
         <img src="kepek/tw.png" alt="twitter" class="socials">
         <img src="kepek/fb.png" alt="facebook" class="socials">
         <img src="kepek/yt.png" alt="youtube" class="socials"><br>
-        <h1>Bejelentkezés</h1>
+        <h1>Profilom</h1>
         <form class="felso_kereses">
             <input type="text" placeholder="Keresés az oldalon.." name="search">
             <button type="submit">Keresés</button>
@@ -24,16 +24,17 @@
             <li><a href="programmes.html">Programok</a></li>
             <li><a href="signform.html">Jelentkezés</a></li>
             <li><a href="payment.html">Támogatás</a></li>
-            <li class="right"><a href="login.html">Bejelentkezés</a></li>
+            <li class="right"><a href="login.html">Profil</a></li>
         </ul>
     </nav>
     <article class="bejelentkezes">
+        <h2 class="bejelentkezes_header">Jelentkezz be!</h2>
         <div class="bejelentkezes_tartalom">
             <form action="action_page.php" method="post">
                 <div class="bejelentkezes">
-                <label for="fnev"><b>Felhasználónév</b></label>
+                <label for="fnev"><b>Felhasználónév:</b></label>
                 <input type="text" placeholder="felhasználónév" name="fnev" required><br>
-                <label for="jszo"><b>Jelszó</b></label>
+                <label for="jszo"><b>Jelszó:</b></label>
                 <input type="password" placeholder="Jelszó" name="jszo" required><br>
                 <button type="submit"><a href="index.html">Bejelentkezés</a></button><br>
                 <label><input type="checkbox" checked="checked" name="Emlékezz rám!"> Emlékezz rám!</label>
@@ -46,7 +47,26 @@
             </div>
         </div>
         <div>
-
+            <h2 class="bejelentkezes_header">Hozz létre egy porfilt!</h2>
+            <div>
+                <form action="action_page.php" method="post">
+                    <div class="bejelentkezes">
+                    <label for="vnev"><b>Vezetéknév</b></label>
+                    <input type="text" id="vnev" name="vnev" placeholder="Vezetéknév">
+                    <label for="knev"><b>Keresztnév</b></label>
+                    <input type="text" id="knev" name="knev" placeholder="Keresztnév">
+                    <label for="fnev"><b>Felhasználónév:</b></label>
+                    <input type="text" placeholder="felhasználónév" name="fnev" required><br>
+                    <label for="email"><b>Email-cím:</b></label>
+                    <input type="text" placeholder="email-cím" name="email" required><br>
+                    <label for="jszo"><b>Jelszó:</b></label>
+                    <input type="password" placeholder="Jelszó" name="jszo" required><br>
+                    <label for="jszo2"><b>Jelszó mégegyszer:</b></label>
+                    <input type="password" placeholder="Jelszó mégegyszer" name="jszo2" required><br>
+                    <button type="submit"><a href="index.html">Regisztráció</a></button><br>
+                    </div> 
+                </form>
+            </div>
         </div>
     </article>
     <footer>
