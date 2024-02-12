@@ -23,6 +23,7 @@ header {
     background: #4d2434;
     color: white;
     font-size: 30px;
+    grid-area: h;
   }
 
 /*szociális média kisikonok*/
@@ -62,6 +63,10 @@ header img{
 }
 
 /*Navigáció*/
+
+nav{
+  grid-area: n;
+}
 
 nav ul {
     list-style-type: none;
@@ -129,12 +134,13 @@ article{
     background-color: #ffffff;
     padding-top: 20px;
     padding-bottom: 20px;
+    grid-area: ar;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
     .kezdolap_tartalom {
         display: grid;
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 30px;
     }
   }
@@ -178,6 +184,7 @@ footer{
     background-color: #4d2434;
     color: #ffffff;
     padding: 5px;
+    grid-area: f;
 }
 
 /*Bejelentkezés from css-e*/
@@ -365,7 +372,7 @@ h2{
 }
 
 .galeria img:hover{
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 
 .rolunk{
@@ -415,4 +422,55 @@ h2{
 
 .visszajelzes_tartalom textarea:hover{
   border-color: #4d2434;
+}
+/**/
+main{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "h"
+  "n"
+  "ar"
+  "f";
+}
+@media only screen and (max-width: 768px) {
+  .rolunk{
+    grid-template-columns: 1fr;
+  }
+  .galeria{
+    grid-template-columns: 1fr 1fr;
+  }
+  .visszajelzes_tartalom textarea {
+    margin-right: 50px auto;
+    width: 93%;
+  }
+  nav li.right{
+    float: none;
+  }
+  nav li{
+    float: none;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+.jobbra img{
+  float: none;
+  display: block;
+  margin: auto;
+}
+.balra img{
+  float: none;
+  display: block;
+  margin: auto;
+}
+.jobbra ul {
+  float: none;
+  display: block;
+  margin: auto;
+}
+.balra ul {
+  float: none;
+  display: block;
+  margin: auto;
+}
+
 }
