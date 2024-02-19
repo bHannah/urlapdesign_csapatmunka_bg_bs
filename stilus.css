@@ -472,5 +472,28 @@ main{
   display: block;
   margin: auto;
 }
+.jelentkezes_tartalom{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.jelentkezes_gif{
+  padding: 0px;
+  margin: auto;
+  width: 200px;
+}
+.bejelentkezes_adatok{
+  grid-area: b;
+}
+.avatarok{
+  grid-area: a;
+}
+.bejelentkezes_tartalom{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas: 
+  "a"
+  "b";
+}
+
 
 }
